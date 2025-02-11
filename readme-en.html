@@ -1,0 +1,300 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>ISDOC – Czech national standard for e-invoicing</title><style type="text/css">
+
+/********************************/
+/* start of styles in block.xsl */
+
+.formalpara-title {
+  font-weight: bold;
+}
+
+div.blockquote-title {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msgmain-title {
+  font-weight: bold;
+}
+
+span.msgsub-title {
+  font-weight: bold;
+}
+
+span.msgrel-title {
+  font-weight: bold;
+}
+
+div.msglevel, div.msgorig, div.msgaud {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msglevel-title, span.msgorig-title, span.msgaud-title {
+  font-weight: bold;
+}
+
+div.msgexplan {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msgexplan-title {
+  font-weight: bold;
+}
+
+/* end of styles in block.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in autotoc.xsl */
+
+
+/* end of styles in autotoc.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in formal.xsl */
+
+div.figure-title {
+  font-weight: bold;
+}
+
+div.example-title {
+  font-weight: bold;
+}
+
+div.equation-title {
+  font-weight: bold;
+}
+
+div.table-title {
+  font-weight: bold;
+}
+
+div.sidebar-title {
+  font-weight: bold;
+}
+
+
+/* end of styles in formal.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in verbatim.xsl */
+
+div.programlisting {
+  white-space: pre;
+  font-family: monospace;
+}
+
+div.screen {
+  white-space: pre;
+  font-family: monospace;
+}
+
+div.synopsis {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/* end of styles in verbatim.xsl */
+/********************************/
+
+/* footnote rule */
+hr.footnote-hr {
+  width: 100;
+}
+
+</style><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" />
+      <meta charset="utf-8" /><style type="text/css">
+    .screen, .programlisting, .literallayout { background-color: #F0F0F0; }
+    body { font-family: Verdana, sans-serif; 
+           background-attachment: fixed; 
+           background-position: center center; 
+	   max-width: 50em;
+	   margin-left: auto;
+	   margin-right: auto; }
+    .article > .titlepage { text-align: center; background-color: #f8b439; padding-top: 0.5em; }
+    .title { color: navy;  }
+    .section .titlepage, .bibliography .titlepage { text-align: left; }
+    .remark { color: red;
+              background-color: yellow;
+	      font-style: italics;
+	    }
+     :link { color: red; text-decoration: none; }
+     :visited { color: red; text-decoration: none; }
+     a:hover { text-decoration: underline; }
+     .note { font-size: smaller; margin-left: 4em; margin-right: 4em; }
+    </style></head>
+   <body>
+      <section xml:lang="cs" class="article" id="d5e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h1 class="title">ISDOC – Czech national standard for e-invoicing</h1>
+               </div>
+               <div>
+                  <h3 class="subtitle"><em>Version 6.0.2 from 2022-03-23</em></h3>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2022 MVČR</p>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2014 ICT UNIE o.s.</p>
+               </div>
+            </div>
+            <hr />
+         </div>
+         <p>Attached schemas and standard formally define exchange format for invoices and other types of documents. The
+            format was originally created by Working Group for Electronic Data
+            Interchange Standards of <a class="link" href="http://www.ictu.cz/" target="_top">ICT Unie o.s.</a>.
+            As of now future development and maintenance is done by Ministry of the Interior.
+         </p>
+         <p>Inquires can be sent to <code class="email"><a class="email" href="mailto:isdoc@mvcr.cz">isdoc@mvcr.cz</a></code>.
+         </p>
+         <section class="section" id="d5e15">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">Content of distribution</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="variablelist">
+               <dl class="variablelist">
+                  <dt><span class="term"><code class="filename">doc/</code></span></dt>
+                  <dd>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc/isdoc.pdf" target="_top">isdoc.pdf</a></code></span></dt>
+                           <dd>
+                              <p>Standard ISDOC 6.0.2 (in Czech)</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc/isdoc.html" target="_top">isdoc.html</a></code></span></dt>
+                           <dd>
+                              <p>HTML rendering of the standard (in Czech)</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">xsd/</code></span></dt>
+                  <dd>
+                     <p>Schemas in W3C XML Schema</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-invoice-6.0.2.xsd" target="_top">isdoc-invoice-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Base invoice schema</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-invoice-dsig-6.0.2.xsd" target="_top">isdoc-invoice-dsig-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schema validating also structure of an embeded digital
+                                 signature
+                              </p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-commondocument-6.0.2.xsd" target="_top">isdoc-commondocument-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Base nonpayment bank document schema</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-commondocument-dsig-6.0.2.xsd" target="_top">isdoc-commondocument-dsig-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schema validating also structure of an embeded digital
+                                 signature
+                              </p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/xmldsig-core-schema.xsd" target="_top">xmldsig-core-schema.xsd</a></code></span></dt>
+                           <dd>
+                              <p>XML Signature schema</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-manifest-6.0.2.xsd" target="_top">isdoc-manifest-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>ISDOC archive manifest schema.</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">sch/</code></span></dt>
+                  <dd>
+                     <p>Schematron schema for rules</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a></code></span></dt>
+                           <dd>
+                              <p>Schematron schema covering selected rules</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">doc-cs/</code></span></dt>
+                  <dd>
+                     <p>Hypertext schema documentation with Czech comments</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-cs/isdoc-invoice-6.0.2.html" target="_top">isdoc-invoice-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Invoice documentation</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-cs/isdoc-commondocument-6.0.2.html" target="_top">isdoc-commondocument-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Nonpayment bank document documentation</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">doc-en/</code></span></dt>
+                  <dd>
+                     <p>Hypertext schema documentation with English comments</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-en/isdoc-invoice-6.0.2.html" target="_top">isdoc-invoice-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Invoice documentation</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-en/isdoc-commondocument-6.0.2.html" target="_top">isdoc-commondocument-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Nonpayment bank document documentation</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">examples/</code></span></dt>
+                  <dd>
+                     <p>Sample ISDOC documents.</p>
+                  </dd>
+               </dl>
+            </div>
+         </section>
+         <section xml:lang="en" class="appendix" id="chagelog">
+            <h2 class="title" style="clear: both">Changelog</h2>
+            <section class="section" id="d5e119">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title">Changes since version 6.0.1 from 2014-05-26</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc; ">
+                     <li class="listitem">
+                        <p>Added a new document representation ISDOC.PDF that allows embedding of ISDOC into PDF/A-3 format.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Description of some elements was improved.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Schema now enforces uniqueness of line identifier.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Clarified details about time stamping.</p>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+         </section>
+      </section>
+   </body>
+</html>
