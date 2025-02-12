@@ -2,6 +2,7 @@
 <!-- 
 
   Schéma pro fakturu ISDOC
+  Schéma pre faktúru ISDOC
   Schema for ISDOC invoice
   
   (c) 2022 MVČR, https://www.mvcr.cz/
@@ -24,11 +25,12 @@
   prior written permission.
 
 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://isdoc.cz/namespace/2013" xmlns:isdoc="http://isdoc.cz/namespace/2013" targetNamespace="http://isdoc.cz/namespace/2013" elementFormDefault="qualified" version="6.0.2" xml:lang="cs">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://isdoc.cz/namespace/2013" xmlns:isdoc="http://isdoc.cz/namespace/2013" targetNamespace="http://isdoc.cz/namespace/2013" elementFormDefault="qualified" version="6.0.2" xml:lang="sk">
   
   <xs:group name="Signature">
     <xs:annotation>
       <xs:documentation xml:lang="cs">Digitální podpis dokladu ve formátu Enveloped XML Signature (http://www.w3.org/TR/xmldsig-core/)</xs:documentation>
+      <xs:documentation xml:lang="sk">Digitálny podpis dokladu vo formáte Enveloped XML Signature (http://www.w3.org/TR/xmldsig-core/)</xs:documentation>
       <xs:documentation xml:lang="en">Document digital signature in the Enveloped XML Signature format (http://www.w3.org/TR/xmldsig-core/)</xs:documentation>
     </xs:annotation>
     <xs:sequence>
@@ -39,6 +41,7 @@
   <xs:simpleType name="VersionType">
     <xs:annotation>
       <xs:documentation xml:lang="cs">Číslo verze ISDOC</xs:documentation>
+      <xs:documentation xml:lang="sk">Číslo verzie ISDOC</xs:documentation>
       <xs:documentation xml:lang="en">ISDOC version number</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:string">
@@ -49,48 +52,56 @@
   <xs:simpleType name="DocumentTypeType">
     <xs:annotation>
       <xs:documentation xml:lang="cs">Typ dokumentu</xs:documentation>
+      <xs:documentation xml:lang="sk">Typ dokumentu</xs:documentation>
       <xs:documentation xml:lang="en">Document type</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:integer">
       <xs:enumeration value="1">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Faktura - daňový doklad</xs:documentation>
+          <xs:documentation xml:lang="sk">Faktúra - daňový doklad</xs:documentation>
           <xs:documentation xml:lang="en">invoice</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="2">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Opravný daňový doklad (dobropis)</xs:documentation>
+          <xs:documentation xml:lang="sk">Opravný daňový doklad (dobropis)</xs:documentation>
           <xs:documentation xml:lang="en">credit note</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="3">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Opravný daňový doklad (vrubopis)</xs:documentation>
+          <xs:documentation xml:lang="sk">Opravný daňový doklad (vrubopis)</xs:documentation>
           <xs:documentation xml:lang="en">debit note</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="4">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Zálohová faktura (nedaňový zálohový list)</xs:documentation>
+          <xs:documentation xml:lang="sk">Zálohová faktúra (nedaňový zálohový list)</xs:documentation>
           <xs:documentation xml:lang="en">proforma invoice (no VAT)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="5">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Daňový doklad při přijetí platby (daňový zálohový list)</xs:documentation>
+          <xs:documentation xml:lang="sk">Daňový doklad pri prijatí platby (daňový zálohový list)</xs:documentation>
           <xs:documentation xml:lang="en">advance invoice (with VAT)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="6">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Opravný daňový doklad při přijetí platby (dobropis DZL)</xs:documentation>
+          <xs:documentation xml:lang="sk">Opravný daňový doklad pri prijatí platby (dobropis DZL)</xs:documentation>
           <xs:documentation xml:lang="en">credit note for advance invoice (with VAT)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="7">
         <xs:annotation>
           <xs:documentation xml:lang="cs">Zjednodušený daňový doklad</xs:documentation>
+          <xs:documentation xml:lang="sk">Zjednodušený daňový doklad</xs:documentation>
           <xs:documentation xml:lang="en">simplified tax document</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
